@@ -1,20 +1,14 @@
 public class Happy_11_doubleD {
     public static void main(String[] args) {
 
-        int [][] matrix = new int [3][3];
-        int x = 1;
-        for(int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                matrix[i][j] = x;
-                x++;
-            }
-        }
+        int [][] gugudan = new int [10][10];
 
-        for(int k = 0; k < matrix.length; k++) {
-            for (int h = 0; h < matrix[0].length; h++) {
-                System.out.print(matrix[k][h] + " ");
+        for (int i = 1; i <= 9; i++) {
+            System.out.println("---" + i + "단---");
+            for (int j = 1; j <= 9; j++) {
+                gugudan[i][j] = i*j;
+                System.out.println(gugudan[i][j]);
             }
-            System.out.println("");
         }
 
     }
